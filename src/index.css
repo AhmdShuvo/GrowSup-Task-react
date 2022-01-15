@@ -1,13 +1,280 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*GLOBAL CSS*/
+
+*{
+	margin: 0;
+	padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+	width: 90%;
+	margin: 0 auto;
 }
+body{
+	font-family: arial,sans-serif;
+	line-height: 22px;
+}
+.icon{
+	font-size: 35px;
+	text-decoration: none;
+	color:#353332;
+}
+.section{
+    float: left;
+    width: 100%;
+}
+/*GLOBAL CSS END*/
+
+/*HEADER CSS*/
+.title{
+	background:#bae847;
+	padding: 10px 0;
+}
+.title .mobile{
+	float: left;
+	width: 50%;	
+	}
+.title .mobile span{
+	font-size: 20px;
+	top:-4px;
+	position:relative;
+}
+.title .social{
+		width:50%;
+		float:left;
+		text-align:right;
+}
+.title .social ul{
+	list-style:none;
+}
+.title .social li{
+	display:inline;
+	margin: 0 5px;
+}
+/*HEADER CSS END*/
+
+
+/*Logo and search bar*/
+.logo_search{
+	background: #cbd6c5;
+}
+ .logo_search .logo{
+	float: left;
+	width: 50%;	
+ }
+  .logo_search .logo .icon{
+	font-size: 70px;
+	color:#0f0e0e !important;
+	margin: 15px 10px;
+  }
+ .logo_search .search{
+	width:50%;
+	float:left;
+	text-align:right;
+	margin: 18px 0px;
+ }
+ 
+ .logo_search .search .search_box{
+	padding:3px 22px;
+	font-size: 18px;
+ }
+ .logo_search .search input{
+	padding: 8px;
+    border: 1px solid #00cc00;
+    margin-right: -5px;
+    /*max-width: 80%;*/
+ }
+ .logo_search .search input:focus{
+	width:50%;
+ }
+ .logo_search .search button{
+	 padding: 8px;
+    border-style: none;
+    border: 1px solid #00cc00;
+    background: #00cc00;
+    color: #ffffff;
+	cursor:pointer;
+ }
+
+/*Logo and search bar end*/
+
+
+/*navigation bar*/
+.navigation_bar{
+	background:#bae847;
+}
+.navigation_bar .nav{
+	text-align:center;
+	list-style: none;
+	margin:12px 0;
+}
+
+.navigation_bar .nav a{
+	text-decoration: none;
+    color: #353332;
+    font-size: 20px;
+    padding: 15px;
+}
+.navigation_bar .nav li{
+	display:inline;
+	padding:15px 0;
+	border-right:1.5px solid #c9c0bb;	
+}
+.navigation_bar .nav li:nth-child(4){
+	border-right:none;
+}
+
+
+/*navigation bar end*/
+
+/*main banner*/
+.main{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../public/img/home/home.jpg");
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	min-height:350px;
+	text-align:center;
+}
+.main .banner{
+	margin-top:150px;
+}
+.main .banner h1{
+	margin: 40px 0;
+	font-size:60px;
+	font-weight:bold;
+	color:#e0d1c9;
+}
+.main .banner p{
+	font-size:25px;
+	font-weight:bold;
+	line-height:25px;
+	margin-bottom:30px;
+}
+.main .banner a{
+	background-color:#545050;
+	border:1px solid #0c0c0c;
+	border-radius:5px;
+	padding:10px 15px;
+	text-decoration:none;
+	font-size:20px;
+	font-weight:bold;
+	color:#ffffff;
+}
+/*main banner end*/
+
+
+
+
+
+/*About us*/
+.about_us{
+	text-align:center;
+	border-bottom: 1.5px solid #332929;
+}
+
+.about_us .about{
+	margin:30px 0;
+}
+
+.about_us .about h2{
+	margin: 38px 0;
+	font-size:35px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color:#3d3a3a;
+}
+
+.about_us .about p{
+	font-size:20px;
+	line-height:25px;
+	margin-bottom:15px;
+	text-align:justify;
+}
+
+
+/*About us end*/
+
+/*gallery*/
+.gallery{
+	padding:80px 0;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("../public/img/gallery/Rest.jpg");
+	background-attachment:fixed;
+	background-repeat:none;
+}
+.gallery .img_box img{
+	height: 300px;
+    width: 32%;
+    float: left;
+    border: 1px solid #250524;
+    margin: 1.5px;
+	
+	
+}
+
+
+
+/*gallery end*/
+
+
+
+
+/*contact us*/
+.contact_us{
+	padding:60px 0;
+}
+
+.contact_us h1{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 5px;
+}
+.contact_us h2{
+    text-align: left;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.contact_us p{
+    font-size: 20px;
+    text-align: center;
+}
+.contact{
+	padding:25px 0 25px 30px;
+}
+.contact_us .contact_form{
+	float:left;
+	width:50%;
+}
+
+.contact_form input,.contact_form textarea{
+	width:80%;
+	padding:8px 0;
+	margin:3px 0;
+	font-size:20px;
+	border:1.5px solid #bae847;
+	box-sizing: border-box;
+	resize:none;
+}
+.contact_form input:last-child{
+	background-color:#bae847;
+	margin-top:-5px;
+}
+
+
+.contact_us .contact_map{
+	float:left;
+	width:50%;
+}
+/*contact us end*/
+
+
+/*footer*/
+.ending{
+	text-align:center;
+	background:#000000;
+	padding: 10px 0;
+	color:#ffffff;
+}
+/*footer css end*/
